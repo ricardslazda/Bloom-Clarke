@@ -1,0 +1,8 @@
+node_modules
+vendor
+resources/assets/css/app.css
+public/css/all.css
+public/js/all.js
+composer.lock
+package-lock.json
+.idea
