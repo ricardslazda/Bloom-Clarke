@@ -1,0 +1,97 @@
+$primary-color: #f69314;
+$color-text-primary: #001935;
+$color-text-secondary: #777;
+@font-face {
+  font-family: 'luthierregular';
+  src: url('../fonts/luthier-regular-webfont.woff2') format('woff2'),
+  url('../fonts/luthier-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*{
+  transition: 0.4s;
+  outline: none;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+body {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px){
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px){
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1240px){
+  .container {
+    max-width: 1090px;
+  }
+}
+@media (min-width: 1367px){
+  .container {
+    max-width: 1210px;
+  }
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+ul, span{
+  margin: 0;
+  padding: 0;
+}
+.mapboxgl-canvas{
+  width: 100% !important;
+}
+.hidden{
+  display: none !important;
+  &-opacity{
+    opacity: 0;
+  }
+}
+.stop-scroll{
+  height: 100%;
+  overflow: hidden;
+}

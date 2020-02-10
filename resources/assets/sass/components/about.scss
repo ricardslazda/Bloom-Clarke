@@ -1,0 +1,46 @@
+.about{
+  padding-top: 36vh;
+  &-box{
+    display: flex;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  &__info{
+    flex: 50%;
+    padding-right: 3vh;
+  }
+  &__image{
+    flex: 50%;
+    padding-left: 3vh;
+    &-box{
+      & img{
+        width: 400px;
+      }
+    }
+  }
+  & h3{
+    font-size: 2.5rem;
+    margin-bottom: 1.5vh;
+  }
+  & p{
+    margin-bottom: 3vh;
+    font-size: 1.8rem;
+    color: #8f8f8f;
+  }
+  & h4{
+    margin-bottom: 1.5vh;
+    font-size: 2.2rem;
+  }
+  &__title{
+    color: $primary-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-box{
+    flex-direction: column;
+  }
+  .about__image-box img{
+    width: 300px;
+  }
+}

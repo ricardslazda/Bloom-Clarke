@@ -1,0 +1,92 @@
+.agents{
+  margin-bottom: 45px;
+  display: flex;
+  &-box{
+    padding-top: 42vh;
+  }
+  &__count{
+    color: $primary-color;
+  }
+  &__properties {
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__object {
+    height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid #eeeeee;
+  }
+
+  &__image-box {
+    flex: 25%;
+  }
+
+  &__image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__type {
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid #eeeeee;
+    padding: 20px;
+  }
+
+  &__content {
+    flex: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh;
+  }
+
+  &__details {
+    flex: 70%;
+  }
+
+  &__job-title {
+    flex: 30%;
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    color: $color-text-primary;
+    font-size: 2rem;
+  }
+
+  &__email {
+    font-size: 1.6rem;
+  }
+
+  &__phone {
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    color: $color-text-primary;
+  }
+  &__info{
+    font-family: "luthierregular", "Helvetica", "Sans-serif";
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    color: #001935;
+  }
+  &__types{
+    & ul li{
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      & a{
+        color: $color-text-secondary
+      }
+    }
+  }
+  &__title{
+    font-size: 1.8rem;
+    color: $color-text-primary;
+    margin-bottom: 10px !important;
+  }
+}

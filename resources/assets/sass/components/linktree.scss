@@ -1,0 +1,65 @@
+.linktree{
+  height: 30vh;
+  top: 0;
+  background-color: #f8f9fa;
+  width: 100%;
+  position: absolute;
+  &-box{
+    height: 6.5vh;
+    background-color: #f8f9fa;
+  }
+  &__container{
+    display: flex;
+    height: 100%;
+  }
+  &__overlay:before{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: "";
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+    bottom: auto;
+    height: 70%;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+  }
+  &__image{
+    background: url(../images/backgrounds/businessman.jpg) center center no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+  }
+  &__link{
+    align-self: center;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: $color-text-secondary;
+    text-transform: capitalize;
+    &--active{
+      color: $primary-color
+    }
+  }
+  &__icon{
+    align-self: center;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    color: $color-text-secondary;
+    &-box{
+      display: flex;
+      align-self: center;
+      text-decoration: none;
+    }
+    &-home{
+      color: $primary-color;
+    }
+  }
+  &__arrow:last-child{
+    display: none;
+  }
+}

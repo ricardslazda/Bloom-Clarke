@@ -1,0 +1,193 @@
+.property{
+  display: flex;
+  padding-top: 42vh;
+  opacity: 0;
+  transition: 1s ease;
+  &__info{
+    flex: 35%;
+    order: 2;
+    padding-left: 15px;
+  }
+  &__data{
+    flex: 65%;
+    order: 1;
+    padding-right: 15px;
+  }
+  &__image{
+    max-width: 100%;
+    height: auto;
+  }
+  &__sub-price{
+    color: $color-text-primary;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  &__title{
+    font-size: 2.5rem;
+    color: $color-text-primary;
+    margin-bottom: 10px;
+  }
+  &__address-small{
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  &__price{
+    display: block;
+    font-size: 3.8rem;
+    color: $primary-color
+  }
+  &__agent{
+    display: flex;
+    padding: 1.5rem!important;
+  }
+  &__agent-image-box{
+    flex: 30%;
+  }
+  &__agent-info-box{
+    flex: 70%;
+  }
+  &__agent-image{
+    border-radius: 50%!important;
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+  }
+  &__agent-name{
+    font-size: 1.9rem;
+  }
+  &__agent-box{
+    border: 1px solid #eeeeee;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__agent-buttons{
+    display: flex;
+  }
+  &__agent-button{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 30px;
+    flex: 50%;
+    &:nth-child(1){
+      color: #fff;
+      background: #001022;
+      border-color: #001022;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    &:nth-child(2){
+      background: $primary-color;
+      border-color: $primary-color;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+  &__agent-title{
+    font-size: 1.6rem;
+    color: $primary-color;
+    margin-bottom: 0.4rem;
+  }
+  &__agent-number{
+    font-size: 1.3rem;
+    color: #777;
+  }
+  &__details{
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    display: flex;
+    &-title{
+      flex: 30%;
+      font-size: 2.3rem;
+      margin-bottom: 5px;
+    }
+    &-info{
+      flex: 70%;
+      display: flex;
+      font-size: 1.3rem;
+    }
+    &-first{
+      flex: 50%;
+      & ul li {
+        margin-bottom: 5px;
+        color: $color-text-secondary;
+        & b{
+          color: $color-text-primary;
+        }
+      }
+    }
+    &-second{
+      flex: 50%;
+      & ul li {
+        margin-bottom: 5px;
+        color: $color-text-secondary;
+        & b{
+          color: $color-text-primary;
+        }
+      }
+    }
+  }
+  &__description{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #eeeeee;
+    padding-top: 3rem;
+    display: flex;
+    &-title{
+      flex: 30%;
+      font-size: 2.3rem;
+    }
+    &-description{
+      flex: 70%;
+      font-size: 1.5rem;
+      color: $color-text-secondary;
+    }
+  }
+  &__address{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    &-title{
+      flex: 30%;
+      font-size: 2.3rem;
+    }
+    &-info{
+      flex: 70%;
+      display: flex;
+      font-size: 1.3rem;
+    }
+    &-first{
+      flex: 50%;
+      & ul li {
+        margin-bottom: 5px;
+        color: $color-text-secondary;
+        & b{
+          color: $color-text-primary;
+        }
+      }
+    }
+    &-second{
+      flex: 50%;
+      & ul li {
+        margin-bottom: 5px;
+        color: $color-text-secondary;
+        & b{
+          color: $color-text-primary;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .property{
+    flex-direction: column;
+  }
+  .property__info{
+    order: 1;
+    margin-bottom: 6rem;
+  }
+}

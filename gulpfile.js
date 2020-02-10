@@ -5,8 +5,12 @@ let watch = require('gulp-watch');
 
 let jsFiles = [
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'resources/assets/js/realestate.js',
-    'resources/assets/js/init.js'
+    'resources/assets/js/carousel.js',
+    'resources/assets/js/loader.js',
+    'resources/assets/js/init.js',
+    'resources/assets/js/navigation.js'
 ];
 let cssFiles = [
     'resources/assets/css/app.css',

@@ -1,0 +1,205 @@
+.landing{
+  min-height: 600px;
+  height: calc(65vh);
+  position: relative;
+  &__loader-box{
+    opacity: 0;
+  }
+  &__loader{
+    margin-top: 40vh !important;
+  }
+  &__container{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center
+  }
+  &__image{
+    max-height: 100%;
+  }
+  &__listing{
+    height: 100%;
+  }
+  &__listings{
+    width: 100vw;
+    height: 80vh;
+  }
+  &__overlay:before{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: "";
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+    bottom: auto;
+    height: 70%;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+  }
+  &__left-icon{
+    position: absolute;
+    left: 30px;
+    top: 40vh;
+    font-size: 35px;
+    color: white;
+    z-index: 10;
+    transition: color .4s;
+    &:hover{
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
+  &__right-icon{
+    transition: color .4s;
+    position: absolute;
+    right: 30px;
+    top: 40vh;
+    font-size: 35px;
+    color: white;
+    z-index: 10;
+    &:hover{
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
+  &__properties{
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    display: flex;
+  }
+  &__property-big{
+    &:hover{
+      opacity: .6;
+    }
+    margin: 0 3rem 0 0;
+    flex: 50%;
+    overflow: hidden;
+    position: relative;
+    &-image{
+      height: 440px;
+      width: 100%;
+      object-fit: cover;
+    }
+    &-address{
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: none;
+      color: white;
+      left: 0;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      bottom: 3rem;
+      font-size: 3rem;
+      font-family: "luthierregular", "Helvetica", "Sans-serif";
+    }
+  }
+  &__properties-small{
+    flex: 50%;
+    display: flex;
+  }
+  &__property-small {
+    &:hover{
+      opacity: .6;
+    }
+    overflow: hidden;
+    position: relative;
+    flex: 50%;
+    &:nth-child(1){
+      margin-bottom: 3rem;
+    }
+    &:nth-child(2){
+      margin-bottom: 3rem;
+    }
+    &-image {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    &-address{
+      text-align: center;
+      font-weight: 500;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: none;
+      bottom: 4px;
+      color: white;
+      left: 0;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      position: absolute;
+      width: 100%;
+      font-size: 1.5rem;
+      font-family: "luthierregular", "Helvetica", "Sans-serif";
+    }
+  }
+  &__stats{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #d5d9dd;
+    padding: 60px 0px 60px 0px;
+    &-box{
+      display: flex;
+    }
+  }
+  &__active{
+    font-family: "luthierregular", "Helvetica", "Sans-serif";
+    flex: 33%;
+    text-align: center;
+    & h3{
+      color: #bfbfbf;
+      font-size: 6rem;
+      font-weight: 300;
+    }
+    & p{
+      font-size: 3rem;
+    }
+  }
+  &__sales{
+    font-family: "luthierregular", "Helvetica", "Sans-serif";
+    flex: 33%;
+    text-align: center;
+    & h3{
+      color: #bfbfbf;
+      font-size: 6rem;
+      font-weight: 300;
+    }
+    & p{
+      font-size: 3rem;
+    }
+  }
+  &__happy{
+    font-family: "luthierregular", "Helvetica", "Sans-serif";
+    flex: 33%;
+    text-align: center;
+    & h3{
+      color: #bfbfbf;
+      font-size: 6rem;
+      font-weight: 300;
+    }
+    & p{
+      font-size: 3rem;
+    }
+  }
+  &__row:nth-child(1){
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 992px) {
+  .landing__properties {
+    flex-direction: column;
+  }
+  .landing__property-big{
+    margin: 0 0 3rem;
+    &-address{
+      bottom: 0;
+    }
+  }
+  .footer-box{
+    width: 100%;
+  }
+}

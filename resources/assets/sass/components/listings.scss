@@ -1,0 +1,107 @@
+.listings {
+  margin-bottom: 45px;
+  display: flex;
+  &-box{
+    padding-top: 42vh;
+  }
+  &__count{
+    color: $primary-color;
+  }
+  &__sidebar {
+    flex: 25%;
+    margin-right: 30px;
+  }
+
+  &__properties {
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__object {
+    height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid #eeeeee;
+  }
+
+  &__image-box {
+    flex: 25%;
+  }
+
+  &__image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__type {
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid #eeeeee;
+    padding: 20px;
+  }
+
+  &__content {
+    flex: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh;
+  }
+
+  &__details {
+    flex: 70%;
+  }
+
+  &__price {
+    flex: 30%;
+    font-size: 2rem;
+    color: $primary-color
+  }
+
+  &__name {
+    color: $color-text-primary;
+    font-size: 2rem;
+  }
+
+  &__address {
+    font-size: 1.3rem;
+  }
+
+  &__info {
+    font-family: "luthierregular", "Helvetica", "Sans-serif";
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    color: $color-text-primary;
+  }
+  &__types{
+    & ul li{
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      & a{
+        color: $color-text-secondary
+      }
+    }
+  }
+  &__title{
+    font-size: 1.8rem;
+    color: $color-text-primary;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 992px) {
+  .listings {
+    flex-direction: column;
+  }
+  .listings__sidebar{
+    margin-right: 0;
+    flex: 0;
+  }
+}
