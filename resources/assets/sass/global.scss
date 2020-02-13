@@ -92,6 +92,6 @@ ul, span{
   }
 }
 .stop-scroll{
-  height: 100%;
   overflow: hidden;
+  position: relative;
 }

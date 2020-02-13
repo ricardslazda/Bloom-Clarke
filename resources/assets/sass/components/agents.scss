@@ -90,3 +90,8 @@
     margin-bottom: 10px !important;
   }
 }
+@media (max-width: 768px) {
+  .agents__image-box {
+    flex: 60%;
+  }
+}

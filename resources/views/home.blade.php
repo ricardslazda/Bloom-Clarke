@@ -6,7 +6,7 @@
     <div class="landing__overlay"></div>
     <section class="landing__container">
         <div class="landing__listings">
-            <div class="landing__listing"><img class="landing__image" src="{{getenv('APP_URL').getenv('APP_ROOT').'/images/properties/'.'1'.'.jpg'}}" alt=""></div>
+            <div class="landing__listing" ><img class="landing__image" src="{{getenv('APP_URL').getenv('APP_ROOT').'/images/properties/'.'1'.'.jpg'}}" alt=""></div>
             <div class="landing__listing"><img class="landing__image" src="{{getenv('APP_URL').getenv('APP_ROOT').'/images/properties/'.'2'.'.jpg'}}" alt=""></div>
             <div class="landing__listing"><img class="landing__image" src="{{getenv('APP_URL').getenv('APP_ROOT').'/images/properties/'.'3'.'.jpg'}}" alt=""></div>
             <div class="landing__listing"><img class="landing__image" src="{{getenv('APP_URL').getenv('APP_ROOT').'/images/properties/'.'4'.'.jpg'}}" alt=""></div>

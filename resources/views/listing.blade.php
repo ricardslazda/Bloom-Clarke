@@ -4,7 +4,9 @@
 @section('active-page', 'Properties')
 @section('content')
     @include('components.linktree', ['links' => ['listings', $propertyType['type']], 'url' => 'house.jpg'])
+    <div class="loader-box">
     <span class="loader loader-quart-9"></span>
+    </div>
 <div class="container property stop-scroll">
     <div class="property__info">
         <h3 class="property__title">{{$property['name']}}</h3>

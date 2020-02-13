@@ -6,16 +6,21 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60vh;
-  transition:1s ease;
-  opacity:1;
+  margin-top: 45vh;
+  &-box{
+    transition:1s ease;
+    opacity:1;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+  }
 }
 .loader-quart-9{
   border-radius: 50px;
-  border: 5px solid rgba(255,255,255,0.1);
-
   -webkit-animation: border-opacity 0.5s linear infinite;
-
   animation: border-opacity 0.5s linear infinite;
 }
 
@@ -25,7 +30,7 @@
   top: -5px; left: -5px; right: -5px; bottom: -5px;
   border: 5px solid transparent;
   border-top-color: $primary-color;
-  border-bottom-color: $color-text-primary;
+  border-bottom-color: white;
   border-radius: 50px;
 
   -webkit-animation: rotation 1s linear infinite;

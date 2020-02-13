@@ -3,7 +3,7 @@
   color: #666666;
   padding: 60px 0 20px;
   &-box{
-    width: 35%
+    width: 50%
   }
   &__title{
     color: white;
@@ -28,5 +28,10 @@
   }
   &__link{
     color: $primary-color;
+  }
+}
+@media (max-width: 992px) {
+  .footer-box{
+    width: 100%;
   }
 }

@@ -1,6 +1,6 @@
 <header class="nav">
     <div class="flex container nav__flex">
-        <a href="#" class="nav__logo">BLOOM & CLARKE</a>
+        <a href="{{getenv('APP_ROOT')}}" class="nav__logo">BLOOM & CLARKE</a>
         <nav>
             <button class="hamburger-menu nav__toggle">
                 <span class="nav__strip"></span>
