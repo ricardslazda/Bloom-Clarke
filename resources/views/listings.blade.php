@@ -4,9 +4,9 @@
 @section('page-id', 'listings')
 @section('title', 'Bloom & Clarke | Property Listings')
     @if($filter)l
-        @include('components.linktree', ['links' => ['listings', $propertyType['type']],'url' => 'house.jpg'])
+        @include('components.linktree', ['links' => ['listings', $propertyType['type']],'url' => '/backgrounds/house.jpg'])
     @else
-        @include('components.linktree', ['links' => ['listings'], 'url' => 'house.jpg'])
+        @include('components.linktree', ['links' => ['listings'], 'url' => '/backgrounds/house.jpg'])
     @endif
     <div class="listings-box container">
         <div class="listings__info">

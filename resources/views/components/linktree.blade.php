@@ -1,5 +1,5 @@
 <div class="linktree">
-    <section class="linktree__image" style="background: url('{{getenv('APP_URL').getenv('APP_ROOT').'/images/backgrounds/'.$url}} ')center center; background-size: cover;">
+    <section class="linktree__image" style="background: url('{{getenv('APP_URL').getenv('APP_ROOT').'/images'.$url}} ')center center; background-size: cover;">
     </section>
     <div class="linktree__overlay"></div>
     <div class="linktree-box">

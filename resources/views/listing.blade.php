@@ -3,7 +3,7 @@
 @section('title', 'Bloom & Clarke | ' . $property['name'])
 @section('active-page', 'Properties')
 @section('content')
-    @include('components.linktree', ['links' => ['listings', $propertyType['type']], 'url' => 'house.jpg'])
+    @include('components.linktree', ['links' => ['listings', $propertyType['type']], 'url' => '/properties/' . $property['image_path'] . '.jpg'])
     <div class="loader-box">
     <span class="loader loader-quart-9"></span>
     </div>

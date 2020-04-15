@@ -2,7 +2,7 @@
 @section('title', 'Bloom & Clarke | Contact')
 @section('page-id', 'contact')
 @section('content')
-    @include('components.linktree', ['links' => ['about'], 'url' => 'about.jpg'])
+    @include('components.linktree', ['links' => ['about'], 'url' => '/backgrounds/about.jpg'])
     <div class="about">
         <div class="about-box container">
             <div class="about__info">
