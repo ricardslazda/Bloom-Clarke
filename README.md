@@ -23,7 +23,7 @@ Real estate website made with custom MVC framework.
 
 ## Pictures
 
-![Imgur](https://imgur.com/wbsN3ts.png)
+![Imgur](https://imgur.com/GtfST4w.png)
 
 ![Imgur](https://imgur.com/wsEi864.png)
 
