@@ -22,8 +22,4 @@ class IndexController extends BaseController
         }
         return view('home', ['listings' => $listings]);
     }
-
-    public function about(){
-        return view('about');
-    }
 }

@@ -4,7 +4,7 @@
     <div class="linktree__overlay"></div>
     <div class="linktree-box">
         <div class="container linktree__container">
-            <a href="{{getenv('APP_ROOT')}}" class="linktree__icon-box"> <i class="fas fa-home linktree__icon linktree__icon linktree__icon-home"></i></a>
+            <a href="{{getenv('APP_ROOT')}}" class="linktree__link" style="margin-right: 10px;">Home</a>
             <i class="fas fa-chevron-right linktree__icon"></i>
             @foreach($links as $link)
                 <?php

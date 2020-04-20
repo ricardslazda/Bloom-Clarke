@@ -6,7 +6,7 @@
         key: 'h0PXSuBWpADri2mCT2v8qmuBLqJIwGw6',
         style: 'tomtom://vector/1/basic-main',
         center: coordinates,
-        zoom: 4
+        zoom: 4,
     });
     var marker = new tt.Marker().setLngLat(coordinates).addTo(map);
     var popupOffsets = {

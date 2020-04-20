@@ -47,7 +47,7 @@ CREATE TABLE `agents` (
 
 INSERT INTO `agents` (`id`, `name`, `surname`, `job_title`, `email`, `phone_number`, `image_path`, `deleted_at`, `created_at`, `updated_at`) VALUES
 (1, 'John', 'Smith', 'Main Agent', 'johnsmith@gmail.com', '0800-666-6666', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(2, 'Joana', 'Williams', 'Company Agent', 'joanailliams@gmail.com', '0800-666-6666', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(2, 'Fred', 'Williams', 'Company Agent', 'fredwilliams@gmail.com', '0800-666-6666', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 

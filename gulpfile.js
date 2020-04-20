@@ -9,7 +9,6 @@ let jsFiles = [
     'resources/assets/js/realestate.js',
     'resources/assets/js/carousel.js',
     'resources/assets/js/loader.js',
-    'resources/assets/js/home.js',
     'resources/assets/js/init.js',
     'resources/assets/js/navigation.js'
 ];

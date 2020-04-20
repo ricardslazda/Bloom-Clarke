@@ -3,7 +3,9 @@
   color: #666666;
   padding: 60px 0 20px;
   &-box{
-    width: 50%
+    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
   &__title{
     color: white;
@@ -13,6 +15,8 @@
   &__info{
     font-size: 1.5rem;
     margin-bottom: 15px;
+    color: white;
+    opacity: .9;
   }
   &__address{
     line-height: 2.2;
@@ -21,13 +25,16 @@
     & i{
       font-size: 1.3rem;
     }
+    & span{
+      color: white;
+    }
   }
   &__copyrights{
     border-top: 1px solid #222;
     padding-top: 35px;
   }
   &__link{
-    color: $primary-color;
+    color: white;
   }
 }
 @media (max-width: 992px) {

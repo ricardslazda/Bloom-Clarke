@@ -10,12 +10,6 @@
     @endif
     <div class="listings-box container">
         <div class="listings__info">
-            <h2><span class="listings__count">{{count($properties)}}</span>
-                @if($filter)
-                    {{ucfirst($propertyType['type'])}} Listings
-                @else
-                    Listings
-                @endif</h2>
         </div>
         <div class="listings">
             @if(!$filter)
