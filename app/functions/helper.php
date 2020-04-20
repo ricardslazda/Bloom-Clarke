@@ -25,6 +25,6 @@ function paginate($num_of_records, $total_record, $table_name, $object){
     $pages = new Paginator($num_of_records, 'p');
     $pages->set_total($total_record);
     $data = Capsule::select("SELECT * FROM $table_name WHERE deleted_at is null ORDER BY created_at DESC" . $pages->get_limit());
-    $categories = $object->transform($data);
-    return [$categories, $pages->page_links()];
+    $transformedData = $object->transform($data);
+    return [$transformedData, $pages->page_links(), $object];
 }

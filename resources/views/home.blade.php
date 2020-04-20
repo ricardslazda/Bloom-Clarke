@@ -3,6 +3,18 @@
 @section('page-id', 'home')
 @section('active-page', 'Home')
 @section('content')
+    @if(\App\classes\Session::has('landed'))
+
+    @else
+        <div class="house__loader">
+            <div>
+                <div class="house__text">
+                    Bloom & Clarke
+                </div>
+            </div>
+        </div>
+        <?php \App\classes\Session::add('landed', true); ?>
+    @endif
     <div class="landing__overlay"></div>
     <section class="landing__container">
         <div class="landing__listings">

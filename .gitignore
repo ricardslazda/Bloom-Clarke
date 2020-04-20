@@ -6,3 +6,4 @@ public/js/all.js
 composer.lock
 package-lock.json
 .idea
+bootstrap/cache

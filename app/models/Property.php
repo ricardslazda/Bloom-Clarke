@@ -24,4 +24,19 @@ class Property extends Model
     {
         return $this->belongsTo(PropertyType::class);
     }
+    public function transform($data)
+    {
+        $object = $this;
+        $properties = [];
+        foreach ($data as $item){
+            array_push($properties, [
+                'id' => $item->id,
+                'price' => $item->price,
+                'name' => $item->name,
+                'description' => $item->description,
+                'image_path' => $item->image_path
+            ]);
+        }
+        return $properties;
+    }
 }

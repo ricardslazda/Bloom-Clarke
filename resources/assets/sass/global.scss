@@ -22,6 +22,10 @@ $color-text-secondary: #777;
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
 }
+.listings {
+  animation: transitionIn 1s;
+}
+
 html{
   overflow: scroll;
   overflow-x: hidden;
@@ -33,6 +37,7 @@ body {
   padding: 0;
   font-weight: 400;
   line-height: 1.7;
+  animation: appear 1s;
 }
 .container {
   max-width: 1140px;
@@ -94,4 +99,118 @@ ul, span{
 .stop-scroll{
   overflow: hidden;
   position: relative;
+}
+.house{
+  &__loader{
+    top: -200vh;
+    opacity: 0;
+    animation: loader 3.2s;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    & div{
+      animation: title 3s;
+    }
+  }
+  &__text{
+    color: black;
+    opacity: 0;
+    font-family: "luthierregular", "Helvetica", "Sans-serif";
+    font-size: 6rem;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+}
+.pagination{
+  font-size: 2rem;
+  display: flex;
+  color: black;
+  & li{
+    float: left;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    padding-left: 19px;
+    padding-top: 7px;
+    &.active{
+      background-color: #f69314;
+      opacity: .8;
+      color: white;
+    }
+    &:first-child{
+      padding-right: 19px;
+    }
+  }
+}
+@keyframes transitionIn {
+   from{
+     opacity: 0;
+     transform: translateY(20px);
+   }
+   to{
+     opacity: 1;
+     transform: rotateY(0);
+   }
+ }
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0%{
+    z-index: 10;
+    top: 0;
+    opacity: 1;
+  }
+  80%{
+    z-index: 10;
+    opacity: 1;
+    top: 0;
+  }
+  100%{
+    z-index: 10;
+    opacity: 0;
+    top: 0;
+  }
+}
+@keyframes loader {
+  0%{
+    z-index: 10;
+    top: 0;
+    opacity: 1;
+  }
+  80%{
+    z-index: 10;
+    opacity: 1;
+    top: 0;
+  }
+  100%{
+    z-index: 10;
+    opacity: 0;
+    top: 0;
+  }
+}
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

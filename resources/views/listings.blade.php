@@ -36,8 +36,10 @@
             @endif
             <div class="listings__properties">
                 @foreach($properties as $property)
-                    @include('components.listing', ['property' => $property, 'propertyType' => $property->propertyType])
-                    @endforeach
+                    <?php $propertyModel = \App\models\Property::find($property['id']) ?>
+                    @include('components.listing', ['property' => $propertyModel, 'propertyType' => $propertyModel->propertyType])
+                @endforeach
+                <?php echo $paginationLinks ?>
             </div>
         </div>
     </div>

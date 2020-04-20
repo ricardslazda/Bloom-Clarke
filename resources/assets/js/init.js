@@ -4,6 +4,7 @@
         switch($("body").data("page-id")) {
             case 'home':
                 REALESTATE.global.carousel();
+                REALESTATE.global.home();
                 break;
             case 'listing':
                 REALESTATE.global.loader();
