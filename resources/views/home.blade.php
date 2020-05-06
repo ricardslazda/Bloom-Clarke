@@ -3,28 +3,6 @@
 @section('page-id', 'home')
 @section('active-page', 'Home')
 @section('content')
-    @if(\App\classes\Session::has('landed'))
-
-    @else
-        <script>
-            let body = document.querySelector('body');
-            let html = document.querySelector('html');
-            body.classList.add('stop-scroll');
-            html.classList.add('stop-scroll');
-            window.setTimeout(function () {
-                body.classList.remove('stop-scroll');
-                html.classList.remove('stop-scroll');
-            }, 3000);
-        </script>
-        <div class="house__loader">
-            <div>
-                <div class="house__text">
-                    Bloom & Clarke
-                </div>
-            </div>
-        </div>
-        <?php \App\classes\Session::add('landed', true); ?>
-    @endif
     <div class="landing__overlay"></div>
     <section class="landing__container">
         <div class="landing__listings">
