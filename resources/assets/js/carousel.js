@@ -1,6 +1,3 @@
-(function () {
-    'use strict';
-    REALESTATE.global.carousel = function () {
         let mediaQuery = window.matchMedia( "(max-width: 768px)" );
         if(mediaQuery.matches) {
             console.log('one slide');
@@ -24,5 +21,3 @@
                 adaptiveHeight: true
             });
         }
-    }
-})();
